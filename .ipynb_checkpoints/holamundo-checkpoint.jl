@@ -21,18 +21,3 @@ function imprimir()
 end
 
 imprimir()
-
-using IntroAJulia
-
-function poligono(t, n, lon)
-    angulo = 360 / n
-    for i in 1:n
-        forward(t, lon)
-        turn(t, -angulo)
-    end
-end
-
-🐢 = Turtle()
-@svg begin
-    poligono(🐢, 7, 70)
-end
