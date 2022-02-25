@@ -24,6 +24,7 @@ imprimir()
 
 using IntroAJulia
 
+"""
 function poligono(t, n, lon)
     angulo = 360 / n
     for i in 1:n
@@ -36,3 +37,4 @@ end
 @svg begin
     poligono(🐢, 7, 70)
 end
+"""
